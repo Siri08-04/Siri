@@ -1,0 +1,13 @@
+def print_pattern(n):
+    num = 1
+    for i in range(1, n+1):
+        for j in range(1, 6):
+            if j == 5:
+                print(num + 1, end='')
+            else:
+                print(num, end='')
+        print()
+        num += 1 if i % 2 != 0 else 2
+
+n = 5
+print_pattern(n)
